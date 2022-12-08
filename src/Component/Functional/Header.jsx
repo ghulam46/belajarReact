@@ -1,9 +1,13 @@
 import React from "react";
+import Blog from "./Blog";
 
 const Header = () => {
     return (
         <div>
-            <h1>Ini adalah Header</h1>
+            <Blog/>
+            <Blog/>
+            <Blog/>
+            <Blog/>
         </div>
     )
 }
