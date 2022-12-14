@@ -22,6 +22,7 @@ export default class Product extends Component {
 
     // melakukan pengecekan ketika stocknya tinggal 1 dan ketika di klik maka akan tampil status habis dan buttonnya jadi disabled
     if(this.state.stock === 1) {
+      // setState = jika mengalami perubahan perilaku dari stock ketika tinggal 1
       this.setState({
         status: "Habis",
         disabled: true
