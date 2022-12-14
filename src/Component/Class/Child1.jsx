@@ -13,7 +13,9 @@ export default class Child1 extends Component {
     return (
       <div>
         <h3>Child Component</h3>
-        <p>stock produk : {this.props.stock}</p>
+        {/* 3. passing data dilakukan disini
+               dengan props kemudian stock */}
+        <p>stock produk : {this.props.stock}</p> 
         </div>
     )
   }
