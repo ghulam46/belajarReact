@@ -13,10 +13,18 @@ export default class Parent extends Component {
         }
     }
 
+    beliProduk = (jumlah) => {
+      this.setState ({
+        stock: this.state.stock - jumlah
+      })
+    }
+
   render() {
     return (
         // 2. kemudian buat component dan masukkan state stock
-      <Child1 stock={this.state.stock} />
+        <Child1 
+        stock={this.state.stock} 
+        fungsi={this.beliProduk.bind(this)}/>
     )
   }
 }
