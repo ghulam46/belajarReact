@@ -1,5 +1,15 @@
 import React, { Component } from "react";
-import { Alert, Button, Container, Table } from "reactstrap";
+import {
+  Alert,
+  Button,
+  Container,
+  Table,
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+} from "reactstrap";
 
 export default class BootstrapComp extends Component {
   constructor(props) {
@@ -49,6 +59,36 @@ export default class BootstrapComp extends Component {
             </tbody>
           </Table>
         </Container>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div
+          className=""
+          style={{
+            padding: "100px",
+          }}
+        >
+          <Card
+            style={{
+              width: "18rem",
+            }}
+          >
+            <img alt="Sample" src="https://picsum.photos/300/200" />
+            <CardBody>
+              <CardTitle tag="h5">Card title</CardTitle>
+              <CardSubtitle className="mb-2 text-muted" tag="h6">
+                Card subtitle
+              </CardSubtitle>
+              <CardText>
+                Some quick example text to build on the card title and make up
+                the bulk of the card‘s content.
+              </CardText>
+              <Button>Button</Button>
+            </CardBody>
+          </Card>
+        </div>
       </div>
     );
   }
