@@ -64,12 +64,7 @@ export default class BootstrapComp extends Component {
         <br />
         <br />
 
-        <div
-          className=""
-          style={{
-            padding: "100px",
-          }}
-        >
+        <div className="mx-5">
           <Card
             style={{
               width: "18rem",
